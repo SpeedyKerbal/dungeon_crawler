@@ -1,0 +1,21 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1732303617
+::res://aseprite/::1732221944
+::res://assets/::1732221945
+Chest.png::CompressedTexture2D::6719400851535912423::1731443028::1731443034::1::::<><>::
+Enviroment tile map.png::CompressedTexture2D::2223961425102844825::1731778475::1731778624::1::::<><>::
+icon.svg::CompressedTexture2D::3387644753502222907::1731430880::1731431026::1::::<><>::
+Player.png::CompressedTexture2D::797144698823357991::1731619569::1731619589::1::::<><>::
+Slime.png::CompressedTexture2D::1767680081428964899::1732221865::1732221945::1::::<><>::
+::res://dungeon-crawler/::1731360569
+README.md::TextFile::-1::1731360569::0::1::::<><>::
+::res://misc/::1731360468
+::res://scenes/::1732222925
+chest.tscn::PackedScene::5657622698071019079::1732221132::0::1::::<><>::res://scripts/chest.gd<>uid://c2y6syfkpno0f::::res://assets/Chest.png
+game_world.tscn::PackedScene::3545130294881823209::1732222925::0::1::::<><>::uid://6xkk4vk57dbl::::res://assets/Enviroment tile map.png<>uid://e2ncm3576nm6::::res://scenes/player.tscn<>uid://cmuuhppljlbut::::res://scenes/chest.tscn<>uid://da2i8ofb577bh::::res://scenes/slime.tscn
+player.tscn::PackedScene::337287141347302051::1732221132::0::1::::<><>::res://scripts/player.gd<>uid://lme4emy5j0et::::res://assets/Player.png
+slime.tscn::PackedScene::7215545660717654761::1732222174::0::1::::<><>::res://scripts/slime.gd<>uid://0gjoygbweg4r::::res://assets/Slime.png
+::res://scripts/::1732222925
+chest.gd::GDScript::-1::1731774590::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1731774590::0::1::::<>CharacterBody2D<>::
+slime.gd::GDScript::-1::1732222925::0::1::::<>Area2D<>::

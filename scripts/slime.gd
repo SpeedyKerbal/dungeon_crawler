@@ -14,4 +14,4 @@ func _physics_process(delta):
 	player_location = get_node("../Player").global_possition
 
 func _on_attack_area_body_entered(body):
-	pass
+	
