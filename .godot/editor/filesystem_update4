@@ -3,3 +3,5 @@ res://scripts/slime.gd
 res://scenes/player.tscn
 res://scenes/slime.tscn
 res://scenes/chest.tscn
+res://scripts/chest.gd
+res://scripts/player.gd

@@ -4,10 +4,7 @@ const SPEED = 50.0
 
 @onready var animated_sprite = $AnimatedSprite2D
 
-var direction_y = null
-var direction_x = null
-
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction_x = Input.get_axis("left", "right")
 	var direction_y = Input.get_axis("up", "down")
 	

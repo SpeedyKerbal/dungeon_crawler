@@ -1,17 +1,15 @@
 extends Area2D
 
-const SPEED = 50
+@export var speed = 20
+var player_possition
+var target_possition
 
-var player_location:int = 0
+@onready var attack_area: Area2D = $attackArea
+@onready var player = %Player
 
-@onready var player = $"../Player"
-@onready var sprite = $Sprite2D
-@onready var collision_shape = $CollisionShape2D
-@onready var attack_area = $attackArea
-@onready var collision_shape_2 = $attackArea/CollisionShape2D2
-
-func _physics_process(delta):
-	player_location = get_node("../Player").global_possition
-
-func _on_attack_area_body_entered(body):
+func _physics_process(delta: float) -> void:
+	player_possition = player.position
+	target_possition = (player_possition - position).normalized() 
 	
+	if position.distance_to(player_possition) > 3 and attack_area.body_entered:
+		position += target_possition * speed * delta
