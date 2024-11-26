@@ -1,7 +1,6 @@
 res://scenes/game_world.tscn
+res://scenes/slime.gd
 res://scenes/player.tscn
 res://scenes/slime.tscn
 res://scenes/chest.tscn
 res://scripts/player.gd
-res://scripts/slime.gd
-res://scenes/slime.gd

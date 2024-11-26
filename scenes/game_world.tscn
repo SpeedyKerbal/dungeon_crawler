@@ -98,8 +98,6 @@ sources/0 = SubResource("TileSetAtlasSource_xh488")
 
 [node name="game_world" type="Node2D"]
 
-[node name="Marker2D" type="Marker2D" parent="."]
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_qf6l4")
 format = 2
@@ -110,7 +108,6 @@ position = Vector2(35, -49)
 
 [node name="Player" parent="." instance=ExtResource("2_knq0b")]
 unique_name_in_owner = true
-position = Vector2(-1, 0)
 scale = Vector2(1, 1)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -118,3 +115,4 @@ zoom = Vector2(7.39, 7.39)
 
 [node name="Slime" parent="." instance=ExtResource("4_lhwlx")]
 position = Vector2(-92, 36)
+collision_mask = 5

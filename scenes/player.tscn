@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://e2ncm3576nm6"]
+[gd_scene load_steps=10 format=3 uid="uid://e2ncm3576nm6"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_cs45i"]
 [ext_resource type="Texture2D" uid="uid://lme4emy5j0et" path="res://assets/Player.png" id="2_31y1u"]
@@ -54,8 +54,11 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vw06t"]
+size = Vector2(4.44444, 11.1111)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k6l1r"]
-size = Vector2(5.55555, 11.1111)
+size = Vector2(6.33333, 11.1111)
 
 [node name="Player" type="CharacterBody2D"]
 scale = Vector2(0.36, 0.36)
@@ -69,6 +72,18 @@ sprite_frames = SubResource("SpriteFrames_yuaio")
 animation = &"down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6.12604e-07, -3.31137e-07)
+scale = Vector2(1.795, 1)
+shape = SubResource("RectangleShape2D_vw06t")
+
+[node name="hitbox" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+visible = false
 position = Vector2(1.19209e-07, -3.31137e-07)
 scale = Vector2(1.25, 1)
 shape = SubResource("RectangleShape2D_k6l1r")
+
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
