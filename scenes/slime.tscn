@@ -1,29 +1,27 @@
-[gd_scene load_steps=5 format=3 uid="uid://da2i8ofb577bh"]
+[gd_scene load_steps=4 format=3 uid="uid://dafg1i4adfwwj"]
 
-[ext_resource type="Script" path="res://scripts/slime.gd" id="1_4dj0x"]
+[ext_resource type="Script" path="res://scenes/slime.gd" id="1_dvc7j"]
 [ext_resource type="Texture2D" uid="uid://0gjoygbweg4r" path="res://assets/Slime.png" id="1_lbq87"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fdj5n"]
-radius = 2.0
-height = 8.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_lxkbq"]
+radius = 43.0465
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_43k4m"]
-radius = 32.0156
-
-[node name="Slime" type="Area2D"]
-script = ExtResource("1_4dj0x")
+[node name="slime" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 2
+script = ExtResource("1_dvc7j")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_lbq87")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = 1.5708
-scale = Vector2(1.35, 0.98)
-shape = SubResource("CapsuleShape2D_fdj5n")
 
-[node name="attackArea" type="Area2D" parent="."]
+[node name="detection_area" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="attackArea"]
-shape = SubResource("CircleShape2D_43k4m")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection_area"]
+shape = SubResource("CircleShape2D_lxkbq")
 
-[connection signal="body_entered" from="attackArea" to="." method="_on_attack_area_body_entered"]
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]

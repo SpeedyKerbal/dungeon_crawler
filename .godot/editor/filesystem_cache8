@@ -1,18 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732477068
-::res://aseprite/::1732455813
-::res://assets/::1732455989
-Chest.png::CompressedTexture2D::6719400851535912423::1732455813::1732455989::1::::<><>::
-Enviroment tile map.png::CompressedTexture2D::2223961425102844825::1732455813::1732455989::1::::<><>::
-icon.svg::CompressedTexture2D::3387644753502222907::1732455813::1732455989::1::::<><>::
-Player.png::CompressedTexture2D::797144698823357991::1732455813::1732455989::1::::<><>::
-Slime.png::CompressedTexture2D::1767680081428964899::1732455813::1732455989::1::::<><>::
-::res://scenes/::1732477059
-chest.tscn::PackedScene::5657622698071019079::1732477059::0::1::::<><>::res://scripts/chest.gd<>uid://c2y6syfkpno0f::::res://assets/Chest.png
-game_world.tscn::PackedScene::3545130294881823209::1732477059::0::1::::<><>::uid://6xkk4vk57dbl::::res://assets/Enviroment tile map.png<>uid://e2ncm3576nm6::::res://scenes/player.tscn<>uid://cmuuhppljlbut::::res://scenes/chest.tscn<>uid://da2i8ofb577bh::::res://scenes/slime.tscn
-player.tscn::PackedScene::337287141347302051::1732477059::0::1::::<><>::res://scripts/player.gd<>uid://lme4emy5j0et::::res://assets/Player.png
-slime.tscn::PackedScene::7215545660717654761::1732477059::0::1::::<><>::res://scripts/slime.gd<>uid://0gjoygbweg4r::::res://assets/Slime.png
-::res://scripts/::1732455813
-chest.gd::GDScript::-1::1732455813::0::1::::<>Area2D<>::
-player.gd::GDScript::-1::1732455813::0::1::::<>CharacterBody2D<>::
-slime.gd::GDScript::-1::1732455813::0::1::::<>Area2D<>::
+::res://::1732565037
+::res://aseprite/::1732455757
+::res://assets/::1732565000
+Chest.png::CompressedTexture2D::6719400851535912423::1732455757::1732565000::1::::<><>::
+Enviroment tile map.png::CompressedTexture2D::2223961425102844825::1732455757::1732565000::1::::<><>::
+icon.svg::CompressedTexture2D::3387644753502222907::1732455757::1732565000::1::::<><>::
+Player.png::CompressedTexture2D::797144698823357991::1732455757::1732565000::1::::<><>::
+Slime.png::CompressedTexture2D::1767680081428964899::1732455757::1732565000::1::::<><>::
+::res://scenes/::1732565002
+chest.tscn::PackedScene::5657622698071019079::1732565002::0::1::::<><>::res://scripts/chest.gd<>uid://c2y6syfkpno0f::::res://assets/Chest.png
+game_world.tscn::PackedScene::3545130294881823209::1732565002::0::1::::<><>::uid://6xkk4vk57dbl::::res://assets/Enviroment tile map.png<>uid://e2ncm3576nm6::::res://scenes/player.tscn<>uid://cmuuhppljlbut::::res://scenes/chest.tscn<>uid://da2i8ofb577bh::::res://scenes/slime.tscn
+player.tscn::PackedScene::337287141347302051::1732565002::0::1::::<><>::res://scripts/player.gd<>uid://lme4emy5j0et::::res://assets/Player.png
+slime.tscn::PackedScene::7215545660717654761::1732565002::0::1::::<><>::res://scripts/slime.gd<>uid://0gjoygbweg4r::::res://assets/Slime.png
+::res://scripts/::1732564886
+chest.gd::GDScript::-1::1732564886::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1732564886::0::1::::<>CharacterBody2D<>::
+slime.gd::GDScript::-1::1732564886::0::1::::<>Area2D<>::
